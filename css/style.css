@@ -21,7 +21,7 @@ body {
 .container .navigation {
     position: relative;
     width: 80px;
-    height: 600px;
+    height: 580px;
     background-color: rgba(255, 255, 255, 0.479);
     backdrop-filter: blur(1rem);
     border-radius: 15px;
@@ -142,7 +142,7 @@ body {
 
 .content #profile {
     width: 1000px;
-    height: 600px;
+    height: 580px;
     display: flex;
     transition: 1s;
 }
@@ -151,7 +151,7 @@ body {
     background-color: rgba(255, 255, 255, 0.479);
     backdrop-filter: blur(1rem);
     width: 300px;
-    height: 600px;
+    height: 580px;
     border-radius: 15px;
 }
 
@@ -274,7 +274,7 @@ body {
     padding: 50px;
     position: relative;
     width: 700px;
-    height: 600px;
+    height: 580px;
     top: 0px;
     left: 10px;
     font-size: 20px;
