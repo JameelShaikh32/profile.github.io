@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-image: url(../images/bg2.jpg);
+    justify-content: left;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+.container .navigation {
+    position: relative;
+    width: 80px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(1rem);
+    border-radius: 15px;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    top: 30px;
+    left: 20px;
+    transition: 0.5s;
+}
+
+.navigation.darkmode {
+    background-image: linear-gradient(to right, rgb(56, 56, 56, 0.5), rgb(56, 56, 56, 0.5));
+}
+
+.container .navigation.active {
+    width: 320px;
+}
+
+.container .navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container .navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.container .navigation ul li:hover {
+    background-color: rgb(214, 212, 214);
+}
+
+.container .navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    color: rgb(61, 61, 61);
+    font-weight: 800px;
+}
+
+.container .navigation ul li a.darkmode {
+    color: whitesmoke;
+}
+
+.container .navigation ul li a .icon {
+    position: relative;
+    min-width: 80px;
+    text-align: center;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+}
+
+.container .navigation ul li a .title {
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.container .toggle {
+    position: absolute;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: rgba(245, 245, 245, 0.678);
+    backdrop-filter: blur(0.5rem);
+    right: -40px;
+    top: 53%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.toggle:hover::before {
+    font-size: 18px;
+}
+
+.toggle::before {
+    content: '\f054';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(41, 41, 41);
+    transition: 0.5s;
+}
+
+.toggle.active::before {
+    content: '\f053';
+}
+
+.content {
+    position: relative;
+    display: flex;
+    top: 30px;
+    left: 30px;
+    width: 1240px;
+    height: 600px;
+    transition: 0.5s;
+}
+
+.content.active {
+    width: 1000px;
+}
+
+.content #profile {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    transition: 1s;
+}
+
+.content #profile .panel1 {
+    background-color: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(1rem);
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.content #profile .panel1 h1 {
+    position: absolute;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    top: 250px;
+    text-shadow: 5px 5px 10px rgba(230, 230, 230, 0.466);
+}
+
+.avatar {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    text-align: center;
+}
+
+.avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+
+.avatar img:hover {
+    width: 190px;
+    height: 190px;
+}
+
+.content #profile .panel1 p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    top: 300px;
+    font-weight: 1000px;
+    color: rgb(0, 0, 0);
+}
+
+.content #profile .panel1 #website {
+    position: absolute;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    top: 360px;
+    color: rgb(0, 0, 0);
+}
+
+.content #profile .panel1 hr {
+    position: relative;
+    top: 350px;
+    width: 250px;
+    left: 25px;
+    border: 1px solid black;
+}
+
+.content #profile .panel1 .social-links {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    width: 95%;
+    display: block;
+    text-align: left;
+}
+
+.content #profile .panel1 .social-links a {
+    display: block;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.content #profile .panel1 .social-links a h6 {
+    position: absolute;
+    width: 88%;
+    display: inline;
+    font-size: 15px;
+    color: black;
+    font-weight: 100px;
+    line-height: 25px;
+}
+
+.content #profile .panel1 .social-links a h6 em {
+    font-size: 14px;
+    font-weight: 50px;
+    color: rgb(44, 44, 44);
+}
+
+.content #profile .panel1 .social-links a .fa-globe {
+    color: rgb(5, 192, 5);
+}
+
+.content #profile .panel1 .social-links a .fa-facebook-square {
+    color: blue;
+}
+
+.content #profile .panel1 .social-links a .fa-instagram {
+    color: crimson;
+}
+
+.content #profile .panel1 .social-links a .fa-github {
+    color: black;
+}
+
+.content #profile .panel1 .social-links a .fa-twitter {
+    color: rgb(0, 153, 255);
+}
+
+.content #profile .panel2 {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(1rem);
+    border-radius: 15px;
+    padding: 50px;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px rgba(230, 230, 230, 0.466);
+    transition: 1s;
+}
+
+.content #profile .panel2.active {
+    display: block;
+    width: 700px;
+}
+
+.content #profile .panel1.darkmode {
+    background-image: linear-gradient(to right, rgb(56, 56, 56, 0.5), rgb(56, 56, 56, 0.5));
+}
+
+.content #profile .panel2.darkmode {
+    background-image: linear-gradient(to right, rgb(56, 56, 56, 0.5), rgb(56, 56, 56, 0.5));
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+}
+
+.content #profile .panel2 p {
+    line-height: 45px;
+}
+
+.content #profile .panel2 hr {
+    outline: none;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.skill-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 15px;
+}
+
+.skills {
+    text-align: right;
+    padding: 0px 10px;
+    color: white;
+    border-radius: 15px;
+    transition: 1s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.html {
+    width: 90%;
+    background-color: #08f110a9;
+    backdrop-filter: blur(0.5rem);
+}
+
+.css {
+    width: 80%;
+    background-color: #0688f398;
+    backdrop-filter: blur(0.5rem);
+}
+
+.js {
+    width: 65%;
+    background-color: #fc1505b0;
+    backdrop-filter: blur(0.5rem);
+}
+
+.py {
+    width: 50%;
+    background-color: #bc08f3b0;
+    backdrop-filter: blur(0.5rem);
+}
+
+.content #course {
+    position: absolute;
+    display: none;
+    left: 320px;
+}
+
+.content #course.active {
+    display: inline;
+}
+
+.content #course iframe {
+    border-radius: 15px;
+    margin: 10px;
+}

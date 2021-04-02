@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li id="prof">
+                    <a href="#profile">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li id="play">
+                    <a href="#playlist">
+                        <span class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+                        <span class="title">Youtube Tutorials Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#setting">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li onclick="changeTheme()">
+                    <a href="#" id="theme">
+                        <span class="icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+                        <span class="title">Change Theme</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:shaikhjameel17@gmail.com">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle"></div>
+    </div>
+    <div class="content">
+        <div id="profile">
+            <div class="panel1">
+                <div class="avatar">
+                    <img src="images/me.jpg">
+                </div>
+                <h1>Jameel Shaikh</h1>
+                <p id="designation">
+                    Front - End Developer<br>Mumbai, Maharashtra, India
+                </p>
+                <hr>
+                <a href="https://jameelshaikh32.github.io/myportfolio.github.io" id="website" target="_blank">
+                    <i class="fa fa-globe"></i>&nbsp;&nbsp;https://jameelshaikh32.github.io/<br>myportfolio.github.io
+                </a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/dev.jameels" target="_blank">
+                        <i class="fa fa-facebook-square"></i>&nbsp;&nbsp;
+                        <h6>Facebook &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <em>@dev.jameels</em>
+                        </h6>
+                    </a>
+                    <a href="https://www.instagram.com/_shaikh_jameel_" target="_blank">
+                        <i class=" fa fa-instagram "></i>&nbsp;&nbsp;
+                        <h6>Instagram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <em>@_shaikh_jameel_</em>
+                        </h6>
+                    </a>
+                    <a href="https://www.github.com/JameelShaikh32 " target="_blank">
+                        <i class="fa fa-github "></i>&nbsp;&nbsp;
+                        <h6>Github &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <em>@JameelShaikh32</em>
+                        </h6>
+                    </a>
+                    <a href="https://www.twitter.com/_jameel_shaikh_ " target="_blank">
+                        <i class="fa fa-twitter "></i>&nbsp;&nbsp;
+                        <h6>Twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <em>@_jameel_shaikh_</em>
+                        </h6>
+                    </a>
+                </div>
+            </div>
+            <div class="panel2 ">
+                <h3 style="line-height: 50px;">Information</h3>
+                <hr>
+                <p>
+                    Name: &nbsp;Jameel Shaikh<br> DOB: &nbsp;29/05/2000 &nbsp;&nbsp;&nbsp;&nbsp; Gender: &nbsp;Male<br> E-Mail ID: &nbsp;shaikhjameel17@gmail.com<br>
+                    <b>Skills:</b>
+                    <br>
+                </p>
+                <p>HTML</p>
+                <div class="skill-container ">
+                    <div class="skills html ">90%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="skill-container ">
+                    <div class="skills css ">80%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="skill-container ">
+                    <div class="skills js ">65%</div>
+                </div>
+
+                <p>Python</p>
+                <div class="skill-container ">
+                    <div class="skills py ">50%</div>
+                </div>
+            </div>
+        </div>
+        <div id="course">
+            <iframe width="400" height="280" src="https://www.youtube.com/embed/WyxzAU3p8CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="280" src="https://www.youtube.com/embed/QXPWs00RD3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            <iframe width="400" height="280" src="https://www.youtube.com/embed/KGkiIBTq0y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="280" src="https://www.youtube.com/embed/dgKSqz3it50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <script src="js/script.js "></script>
+</body>
+
+</html>
